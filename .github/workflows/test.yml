@@ -58,7 +58,9 @@ jobs:
       - name: Post tests
         if: always()
         run: |
-          logsPath=$(sudo find . -name "console.log");
+          logsPath=$(sudo find . -name "console.log" | grep graphql);
+          cat "$logsPath" | grep Launching
+          logsPath=$(sudo find . -name "console.log" | grep system);
           cat "$logsPath" | grep Launching
       - name: Archive server logs if failed
         if: failure()
