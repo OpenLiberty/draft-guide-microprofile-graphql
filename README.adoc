@@ -19,7 +19,7 @@
 :imagesdir: /img/guide/{projectid}
 :source-highlighter: prettify
 :page-seo-title: Implementing a GraphQL microservice using MicroProfile API to query and update data from multiple services.
-:page-seo-description: A getting started tutorial with examples on how to implement a GraphQL microservice using Java and Eclipse MicroProfile API to query and update data from multiple RESTful services, and how to test GraphQL queries and mutations using the GraphiQL user interface.
+:page-seo-description: A getting started tutorial with examples on how to implement a GraphQL microservice using Java and MicroProfile API to query and update data from multiple RESTful services, and how to test GraphQL queries and mutations using the GraphiQL user interface.
 :guide-author: Open Liberty
 = Optimizing REST queries for microservices with GraphQL
 
