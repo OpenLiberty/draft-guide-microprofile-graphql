@@ -1,4 +1,4 @@
-// Copyright (c) 2021, 2023 IBM Corporation and others.
+// Copyright (c) 2021, 2024 IBM Corporation and others.
 // Licensed under Creative Commons Attribution-NoDerivatives
 // 4.0 International (CC BY-ND 4.0)
 //   https://creativecommons.org/licenses/by-nd/4.0/
@@ -12,7 +12,7 @@
 :page-releasedate: 2021-10-22
 :page-essential: false
 :page-description: Learn how to use MicroProfile GraphQL to query and update data.
-:page-tags: ['MicroProfile']
+:page-tags: ['microprofile']
 :page-related-guides: ['rest-intro', 'graphql-client', 'jpa-intro', 'mongodb-intro']
 :page-permalink: /guides/{projectid}
 :common-includes: https://raw.githubusercontent.com/OpenLiberty/guides-common/prod
@@ -32,7 +32,7 @@ Learn how to use MicroProfile GraphQL to query and update data from multiple ser
 
 == What you'll learn
 
-You will learn how to build and use a simple GraphQL service with https://openliberty.io/docs/latest/reference/feature/mpGraphQL-2.0.html[MicroProfile GraphQL^]. 
+You will learn how to build and use a simple GraphQL service with https://openliberty.io/docs/latest/reference/feature/mpGraphQL.html[MicroProfile GraphQL^]. 
 
 GraphQL is an open source data query language. Unlike REST APIs, each HTTP request that is sent to a GraphQL service goes to a single HTTP endpoint. Create, read, update, and delete operations and their details are differentiated by the contents of the request. If the operation returns data, the user specifies what properties of the data that they want returned. For read operations, a JSON object is returned that contains only the data and properties that are specified. For other operations, a JSON object might be returned containing information such as a success message. 
 
@@ -258,7 +258,7 @@ server.xml
 include::finish/graphql/src/main/liberty/config/server.xml[]
 ----
 
-The [hotspot=graphql file=1]`mpGraphQL` feature that is added to the [hotspot file=1]`server.xml` enables the use of the https://openliberty.io/docs/latest/reference/feature/mpGraphQL-2.0.html[MicroProfile GraphQL^] feature in Open Liberty. Open Liberty's MicroProfile GraphQL feature includes GraphiQL. Enable it by setting the [hotspot=enableGraphiql file=1]`io.openliberty.enableGraphQLUI` variable to `true`.
+The [hotspot=graphql file=1]`mpGraphQL` feature that is added to the [hotspot file=1]`server.xml` enables the use of the https://openliberty.io/docs/latest/reference/feature/mpGraphQL.html[MicroProfile GraphQL^] feature in Open Liberty. Open Liberty's MicroProfile GraphQL feature includes GraphiQL. Enable it by setting the [hotspot=enableGraphiql file=1]`io.openliberty.enableGraphQLUI` variable to `true`.
 
 
 == Building and running the application
